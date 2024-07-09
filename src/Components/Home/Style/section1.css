@@ -1,0 +1,63 @@
+.curve-card {
+    position: relative;
+}
+.curve-card::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 75%;
+    left: 50%;
+    top: -50px;
+    border:1px solid #ffffff;
+    transform: translateX(-50%);
+    margin-inline: auto;
+    /* background-color: #1A2317; */
+    z-index: -1;
+    border-bottom-left-radius:50% ;
+    border-bottom-right-radius:50% ;
+    border-bottom: 2px solid #ffffff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.urve-card::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+    margin-inline: auto;
+    /* background-color: red; */
+    z-index: 1;
+    }
+
+
+    #heart { 
+        position: relative; 
+        width: 100px; 
+        height: 90px; 
+       
+    } 
+    
+    #heart:before, #heart:after { 
+        position: absolute; 
+        content: ""; 
+        left: 50px; 
+        top: 0; 
+        width: 50px; 
+        height: 80px; 
+        background: red; 
+        border: 2px solid #ffffff;
+        border-radius: 50px 50px 0 0; 
+        transform: rotate(-45deg); 
+        transform-origin: 0 100%; 
+    } 
+    
+    #heart:after { 
+        left: 0; 
+        transform: rotate(45deg); 
+        transform-origin :100% 100%; 
+    }

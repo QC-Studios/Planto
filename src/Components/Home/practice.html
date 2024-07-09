@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .bg-img {
+                width: 100%;
+                position: relative;
+                /* height: 500%; */
+                /* background-image: url("../../../public/bg-image.png");
+                background-size: cover; */
+                /* background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top; */
+                /* background-color: red; */
+            }
+            .bg-img::before {
+                content: "";
+                /* width: 100%; */
+                /* height: 100%; */
+                z-index: -1;
+                /* height: 500%; */
+                position: absolute;
+                background-image: url("../../../public/bg-image.png");
+                background-size: cover;
+                /* background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top; */
+                /* background-color: red; */
+            }
+            .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202820;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.corner {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left-color: #3EB44A;
+    border-right-color: #3EB44A;
+    margin: 0 5px;
+}
+
+.corner:first-child {
+    border-right-color: transparent;
+}
+
+.corner:last-child {
+    border-left-color: transparent;
+}
+        </style>
+    </head>
+    <body class="bg-img">
+        <div class="banner">
+            <span class="corner"></span>
+            Customer Review
+            <span class="corner"></span>
+        </div>
+    </body>
+</html>

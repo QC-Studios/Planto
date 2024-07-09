@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+.curve{
+    position: relative;
+}
+.curve::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    background: #1A2317;
+    top: -22px;
+    border-bottom-left-radius:100% ;
+    border-bottom-right-radius:100% ;
+    border:3px solid #FFFFFF45;
+}
+.curve::after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 30px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    background: #1A2317;
+    top: -31px;
+}
+.curve2{
+    position: relative;
+}
+.curve2::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 30px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    background: #1A2317;
+    top: -22px;
+    border-bottom-left-radius:120% ;
+    border-bottom-right-radius:120% ;
+    border:3px solid #FFFFFF45;
+}
+.curve2::after{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 30px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    background: #1A2317;
+    top: -31px;
+}
+
+.glass {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
+}
+#bg-plant-div {
+    position: relative;
+    height: 100%;
+}
+
+#bg-plant-div::before {
+    content: "";
+    position: absolute;
+    top: -105px;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    /* margin-inline: -57px; */
+    /* margin-right: -45px; */
+    z-index: -1;
+    background-image: url("/bg-image.png");
+    background-size: cover;
+}
+
+/* .gradient-border {
+    position: relative;
+    background: inherit;
+    z-index: 1;
+}
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    width: 68.5px;
+    height: 68.5px;
+    border-width: 3px;
+    border-style: solid;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 20px;
+    border-image: linear-gradient(to bottom, red, rgba(255, 255, 255, 0.961)) 1;
+} */
